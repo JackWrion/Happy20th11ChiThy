@@ -215,7 +215,7 @@
 
     setTimeout(()=>{
         typeText();
-    }, 11500)
+    }, 8000)
     });
 
     // .textLetter text h2
@@ -257,7 +257,7 @@
         if (indexTextContent < textLetterP.length) {
             textLetterContent.textContent += textLetterP[indexTextContent];
             indexTextContent++;
-            setTimeout(indexTextContent, 100);
+            setTimeout(indexTextContent, 50);
         }
         else{
             clearInterval(timoutTextLetterContent)
@@ -282,7 +282,7 @@
         document.querySelector(".listSlider").prepend(slider[slider.length -1])
     })
 
-    document.querySelector(".buttonLove").addEventListener("click", function(){
+    document.querySelector(".button").addEventListener("click", function(){
         let timeout = setInterval(()=>{
             var letters = document.createElement("div");
             letters.className = "letters"
@@ -295,7 +295,7 @@
             letters.style.transform = `rotate(${rotate}deg)`;
             setTimeout(()=>{
                 letters.style.top = "100%";
-            },5000)
+            },200)
             setTimeout(()=>{
                 letters.remove()
             },20000)
@@ -307,7 +307,7 @@
                     
                 })
             })
-        },500)
+        },200)
     })
 
     document.querySelector(".fa-xmark").addEventListener("click", function(){
