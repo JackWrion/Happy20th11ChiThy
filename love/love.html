@@ -21,12 +21,6 @@
             <div class="boxSlider">
 
                     <div class="listSlider">                        
-                        <div class="slider">
-                            <img src="../image/love1.jfif" alt="">
-                        </div>
-                        <div class="slider">
-                            <img src="../image/love2.png" alt="">
-                        </div>
                         
                         <div class="slider">
                             <img src="../image/Chi_Thy.png" alt="">
@@ -184,7 +178,7 @@
 
     const inputField = document.getElementById('inputField');
     const textToType = "Chị Thy";                                 /// Doi ten o day
-    const typingSpeed = 100; // milliseconds per character
+    const typingSpeed = 50; // milliseconds per character
 
     let charIndex = 0;
     function typeText() {
@@ -301,10 +295,10 @@
             letters.style.transform = `rotate(${rotate}deg)`;
             setTimeout(()=>{
                 letters.style.top = "100%";
-            },1000)
+            },5000)
             setTimeout(()=>{
                 letters.remove()
-            },11000)
+            },20000)
             document.querySelectorAll(".letters").forEach((item)=>{
                 item.addEventListener("click", function(){
                     clearInterval(timeout)
